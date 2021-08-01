@@ -20,8 +20,8 @@ const Wrapper = styled.div`
   }
 
   .cta-btn {
-    border: 2px solid var(--secondary-color);
-    color: var(--secondary-color);
+    border: 2px solid var(--cherry-color);
+    color: var(--cherry-color);
     font-size: 16px;
     font-weight: bold;
     border-radius: 25px;
@@ -31,7 +31,7 @@ const Wrapper = styled.div`
     margin: 1rem;
     cursor: pointer;
     &:hover {
-      background: var(--secondary-color-tint);
+      background-color: var(--chery-color-tint);
     }
   }
 `;

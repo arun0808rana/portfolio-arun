@@ -5,7 +5,7 @@ import octoIcon from "../../assets/icons/octo.svg";
 
 function Projects() {
   return (
-    <Wrapper>
+    <Wrapper id="projects-id">
       <h2 className="section-heading">Projects</h2>
       <div class="flex-container">
         {projectsData.map((project, index) => {
@@ -59,9 +59,9 @@ const Wrapper = styled.div`
     margin: 1rem;
     max-width: 300px;
     min-height: 250px;
-    border: 1px solid var(--tertiary-color);
+    border: 7px solid var(--tertiary-color);
     color: var(--primary-color);
-    border-radius: 4px;
+    border-radius: 25px;
     transition: width 5s;
     &:hover {
       transition: width 5s;
@@ -93,7 +93,7 @@ const Wrapper = styled.div`
         border-radius: 25px;
         margin: 0 10px 0 0;
         font-family: "Roboto Mono", monospace;
-        color: var(--secondary-color);
+        color: var(--cherry-color);
       }
     }
 
