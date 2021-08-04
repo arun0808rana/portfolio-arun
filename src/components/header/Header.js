@@ -68,8 +68,8 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     img.logo {
-      height: 50px;
-      border-radius: 25px;
+      height: 80px;
+      border-radius: 100%;
       @media (max-width: 540px) {
         margin-left: 1rem;
       }
@@ -116,7 +116,7 @@ const Wrapper = styled.div`
       a {
         padding: 1rem;
         text-decoration: none;
-        color: var(--primary-color);
+        color: var(--tertiary-color);
         letter-spacing: 0.1rem;
       }
       .cta-btn {

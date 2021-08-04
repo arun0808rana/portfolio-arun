@@ -50,7 +50,7 @@ const Wrapper = styled.div`
     justify-content: center;
 
     @media (min-width: 1112px) {
-      justify-content: start;
+      justify-content: center;
     }
   }
   .card {

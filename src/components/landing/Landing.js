@@ -3,13 +3,23 @@ import styled from "styled-components/macro";
 import ScrollDown from "./components/scrollDown/ScrollDown";
 
 function Landing() {
+  const scollToProjects = () => {
+    const projectEl = document.querySelector("#projects-id");
+    projectEl.scrollIntoView({ 
+      behavior: "smooth", 
+      block: "nearest"
+   });
+  };
+
   return (
     <Wrapper>
       <div class="container">
         <div class="dim-text">Hi, my name is</div>
         <div class="name">Arun Rana.</div>
         <div class="hobby">I build things for the web.</div>
-        <button class="cta-btn">See Projects</button>
+        <button class="cta-btn" onClick={scollToProjects}>
+          See Projects
+        </button>
       </div>
       <ScrollDown />
     </Wrapper>
@@ -24,12 +34,12 @@ const Wrapper = styled.div`
   height: calc(100vh - 50px);
   display: flex;
   align-items: center;
-  justify-content:center;
-  flex-direction:column;
+  justify-content: center;
+  flex-direction: column;
   padding: 0 2.5rem;
 
   .container {
-    margin-bottom:20vh;
+    margin-bottom: 20vh;
     .dim-text {
       color: var(--tertiary-color);
     }

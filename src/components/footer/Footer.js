@@ -4,6 +4,13 @@ import styled from "styled-components/macro";
 function Footer() {
   return (
     <Wrapper>
+      <div className="footer-sm-icons">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <i class="fa fa-github-alt" aria-hidden="true"></i>
+        <div class="long-line"></div>
+      </div>
       <div class="foot-note">
         Designed by <span>Arun Rana</span>
       </div>
@@ -12,7 +19,24 @@ function Footer() {
 }
 
 const Wrapper = styled.div`
-  padding-top: 25vh;
+  /* @media (max-width: 1600px) {
+    padding-top: 25vh;
+  } */
+  .footer-sm-icons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    max-width: 1140px;
+    margin: auto;
+    .fa {
+      margin: 2rem;
+      font-size: 20px;
+      color: var(--cherry-color);
+    }
+    @media (min-width: 1600px) {
+      display: none;
+    }
+  }
   .foot-note {
     text-align: center;
     font-family: "Roboto Mono", monospace;

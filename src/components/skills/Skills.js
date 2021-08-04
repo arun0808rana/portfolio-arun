@@ -23,43 +23,43 @@ function Skills() {
       <Wrapper>
         <div class="lhs">
           <div class="blobs-container d-flex">
-            <div class="blob white">
+            <div class="blob red">
               <img src={figma} alt="" />
             </div>
             <div class="blob red">
               <img src={react} alt="" />
             </div>
-            <div class="blob orange">
+            <div class="blob red">
               <img src={redux} alt="" />
             </div>
-            <div class="blob yellow">
+            <div class="blob red">
               <img src={angular} alt="" />
             </div>
-            <div class="blob blue">
+            <div class="blob red">
               <img src={sass} alt="" />
             </div>
-            <div class="blob green">
+            <div class="blob red">
               <img src={storybook} alt="" />
             </div>
-            <div class="blob purple">
+            <div class="blob red">
               <img src={bootstrap} alt="" />
             </div>
-            <div class="blob">
+            <div class="blob red">
               <img src={cssImg} alt="" />
             </div>
-            <div class="blob">
+            <div class="blob red">
               <img src={git} alt="" />
             </div>
-            <div class="blob">
+            <div class="blob red">
               <img src={jsImg} alt="" />
             </div>
-            <div class="blob">
+            <div class="blob red">
               <img src={tailwind} alt="" />
             </div>
-            <div class="blob">
+            <div class="blob red">
               <img src={photoshop} alt="" />
             </div>
-            <div class="blob">
+            <div class="blob red">
               <img src={htmlImg} alt="" />
             </div>
           </div>
@@ -78,11 +78,18 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
   .lhs {
     .blobs-container {
       /* justify-content: space-between; */
       flex-wrap: wrap;
       max-width: 576px;
+      @media (max-width: 768px) {
+        justify-content: center;
+      }
     }
   }
 
