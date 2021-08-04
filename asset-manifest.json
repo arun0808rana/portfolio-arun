@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/portfolio-arun/static/css/main.01338b4c.chunk.css",
+    "main.js": "/portfolio-arun/static/js/main.51c7fe2c.chunk.js",
+    "main.js.map": "/portfolio-arun/static/js/main.51c7fe2c.chunk.js.map",
+    "runtime-main.js": "/portfolio-arun/static/js/runtime-main.b33a9b5a.js",
+    "runtime-main.js.map": "/portfolio-arun/static/js/runtime-main.b33a9b5a.js.map",
+    "static/js/2.3ab000b4.chunk.js": "/portfolio-arun/static/js/2.3ab000b4.chunk.js",
+    "static/js/2.3ab000b4.chunk.js.map": "/portfolio-arun/static/js/2.3ab000b4.chunk.js.map",
+    "static/js/3.ddf3d180.chunk.js": "/portfolio-arun/static/js/3.ddf3d180.chunk.js",
+    "static/js/3.ddf3d180.chunk.js.map": "/portfolio-arun/static/js/3.ddf3d180.chunk.js.map",
+    "index.html": "/portfolio-arun/index.html",
+    "static/css/main.01338b4c.chunk.css.map": "/portfolio-arun/static/css/main.01338b4c.chunk.css.map",
+    "static/js/2.3ab000b4.chunk.js.LICENSE.txt": "/portfolio-arun/static/js/2.3ab000b4.chunk.js.LICENSE.txt",
+    "static/media/bootstrap.a09dbe7b.svg": "/portfolio-arun/static/media/bootstrap.a09dbe7b.svg",
+    "static/media/bro.3f43c666.svg": "/portfolio-arun/static/media/bro.3f43c666.svg",
+    "static/media/css.bbaeb13c.svg": "/portfolio-arun/static/media/css.bbaeb13c.svg",
+    "static/media/figma.4a10de26.svg": "/portfolio-arun/static/media/figma.4a10de26.svg",
+    "static/media/git.0f19aba6.svg": "/portfolio-arun/static/media/git.0f19aba6.svg",
+    "static/media/html.d9300380.svg": "/portfolio-arun/static/media/html.d9300380.svg",
+    "static/media/js.34446b7b.svg": "/portfolio-arun/static/media/js.34446b7b.svg",
+    "static/media/logo.9cb0a4d5.png": "/portfolio-arun/static/media/logo.9cb0a4d5.png",
+    "static/media/ng.11c84c9c.svg": "/portfolio-arun/static/media/ng.11c84c9c.svg",
+    "static/media/octo.38536b12.svg": "/portfolio-arun/static/media/octo.38536b12.svg",
+    "static/media/open-in-new-tab.deb54179.svg": "/portfolio-arun/static/media/open-in-new-tab.deb54179.svg",
+    "static/media/photoshop.7684026f.svg": "/portfolio-arun/static/media/photoshop.7684026f.svg",
+    "static/media/react.6e08253c.svg": "/portfolio-arun/static/media/react.6e08253c.svg",
+    "static/media/redux.60c47e4f.svg": "/portfolio-arun/static/media/redux.60c47e4f.svg",
+    "static/media/sass.b68284a2.svg": "/portfolio-arun/static/media/sass.b68284a2.svg",
+    "static/media/storybook.918fc246.svg": "/portfolio-arun/static/media/storybook.918fc246.svg",
+    "static/media/tailwind.a9564f6f.svg": "/portfolio-arun/static/media/tailwind.a9564f6f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b33a9b5a.js",
+    "static/js/2.3ab000b4.chunk.js",
+    "static/css/main.01338b4c.chunk.css",
+    "static/js/main.51c7fe2c.chunk.js"
+  ]
+}
