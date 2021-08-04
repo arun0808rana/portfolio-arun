@@ -13,11 +13,11 @@ function Landing() {
 
   return (
     <Wrapper>
-      <div class="container">
-        <div class="dim-text">Hi, my name is</div>
-        <div class="name">Arun Rana.</div>
-        <div class="hobby">I build things for the web.</div>
-        <button class="cta-btn" onClick={scollToProjects}>
+      <div className="container">
+        <div className="dim-text">Hi, my name is</div>
+        <div className="name">Arun Rana.</div>
+        <div className="hobby">I build things for the web.</div>
+        <button className="cta-btn" onClick={scollToProjects}>
           See Projects
         </button>
       </div>

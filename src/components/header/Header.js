@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import styled from "styled-components/macro";
 import ham from "../../assets/icons/menu.png";
-import logo from "../../assets/images/logo.jpeg";
+import logo from "../../assets/images/logo.png";
 
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
     <Wrapper>
-      <div class="logo">
+      <div className="logo">
         <img src={logo} alt="logo" className="img-fluid logo" />
       </div>
 
@@ -23,11 +23,11 @@ function Header() {
           <a href="">Experience</a>
         </li>
         <li>
-          <button class="cta-btn">Contact</button>
+          <button className="cta-btn">Contact</button>
         </li>
       </ul>
 
-      <div class="hamburger" onClick={() => setShowMenu(!showMenu)}>
+      <div className="hamburger" onClick={() => setShowMenu(!showMenu)}>
         <img src={ham} alt="menu" className="ham img-fluid" />
       </div>
 
@@ -43,7 +43,7 @@ function Header() {
             <a href="">Experience</a>
           </li>
           <li>
-            <button class="cta-btn">Contact</button>
+            <button className="cta-btn">Contact</button>
           </li>
         </ul>
       )}
@@ -67,8 +67,11 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
     img.logo {
-      height: 80px;
+      height: 60px;
+      border: 4px solid var(--primary-color);
+      padding: 4px;
       border-radius: 100%;
       @media (max-width: 540px) {
         margin-left: 1rem;

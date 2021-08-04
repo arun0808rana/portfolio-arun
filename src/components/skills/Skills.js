@@ -8,7 +8,6 @@ import angular from "../../assets/images/ng.svg";
 import sass from "../../assets/images/sass.svg";
 import storybook from "../../assets/images/storybook.svg";
 import tailwind from "../../assets/images/tailwind.svg";
-import xd from "../../assets/images/xd.svg";
 import jsImg from "../../assets/images/js.svg";
 import cssImg from "../../assets/images/css.svg";
 import htmlImg from "../../assets/images/html.svg";
@@ -19,52 +18,52 @@ import git from "../../assets/images/git.svg";
 function Skills() {
   return (
     <>
-      <div class="section-heading">Skills</div>
+      <div className="section-heading">Skills</div>
       <Wrapper>
-        <div class="lhs">
-          <div class="blobs-container d-flex">
-            <div class="blob red">
+        <div className="lhs">
+          <div className="blobs-container d-flex">
+            <div className="blob red">
               <img src={figma} alt="" />
             </div>
-            <div class="blob red">
+            <div className="blob red">
               <img src={react} alt="" />
             </div>
-            <div class="blob red">
+            <div className="blob red">
               <img src={redux} alt="" />
             </div>
-            <div class="blob red">
+            <div className="blob red">
               <img src={angular} alt="" />
             </div>
-            <div class="blob red">
+            <div className="blob red">
               <img src={sass} alt="" />
             </div>
-            <div class="blob red">
+            <div className="blob red">
               <img src={storybook} alt="" />
             </div>
-            <div class="blob red">
+            <div className="blob red">
               <img src={bootstrap} alt="" />
             </div>
-            <div class="blob red">
+            <div className="blob red">
               <img src={cssImg} alt="" />
             </div>
-            <div class="blob red">
+            <div className="blob red">
               <img src={git} alt="" />
             </div>
-            <div class="blob red">
+            <div className="blob red">
               <img src={jsImg} alt="" />
             </div>
-            <div class="blob red">
+            <div className="blob red">
               <img src={tailwind} alt="" />
             </div>
-            <div class="blob red">
+            <div className="blob red">
               <img src={photoshop} alt="" />
             </div>
-            <div class="blob red">
+            <div className="blob red">
               <img src={htmlImg} alt="" />
             </div>
           </div>
         </div>
-        <div class="rhs">
+        <div className="rhs">
           <img src={skillsBanner} alt="skills" className="skills-banner" />
         </div>
       </Wrapper>

@@ -7,29 +7,29 @@ function Projects() {
   return (
     <Wrapper id="projects-id">
       <h2 className="section-heading">Projects</h2>
-      <div class="flex-container">
+      <div className="flex-container">
         {projectsData.map((project, index) => {
           return (
-            <div class="card">
-              <div class="d-flex">
-                <div class="sn">
+            <div className="card" key={`projects-card-${index}`}>
+              <div className="d-flex">
+                <div className="sn">
                   {index < 10 ? 0 : null}
                   {index + 1}.
                 </div>
-                <div class="header">{project.title}</div>
+                <div className="header">{project.title}</div>
               </div>
-              <div class="text">{project.description}</div>
-              <div class="stack">
+              <div className="text">{project.description}</div>
+              <div className="stack">
                 {project.stack.map((tech, idx) => {
                   console.log(idx, "idx");
                   return (
-                    <div class="pill">
+                    <div className="pill"  key={`project-pills-${Math.random()}`}>
                       {tech} {idx !== tech.length - 1 ? "|" : idx}
                     </div>
                   );
                 })}
               </div>
-              <div class="social-icons">
+              <div className="social-icons">
                 <img src={octoIcon} alt="" />
                 <img src={openInNewTabIcon} alt="" />
               </div>

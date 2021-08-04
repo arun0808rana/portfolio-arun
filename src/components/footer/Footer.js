@@ -5,13 +5,13 @@ function Footer() {
   return (
     <Wrapper>
       <div className="footer-sm-icons">
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-        <i class="fa fa-github-alt" aria-hidden="true"></i>
-        <div class="long-line"></div>
+        <i className="fa fa-twitter" aria-hidden="true"></i>
+        <i className="fa fa-facebook" aria-hidden="true"></i>
+        <i className="fa fa-linkedin" aria-hidden="true"></i>
+        <i className="fa fa-github-alt" aria-hidden="true"></i>
+        <div className="long-line"></div>
       </div>
-      <div class="foot-note">
+      <div className="foot-note">
         Designed by <span>Arun Rana</span>
       </div>
     </Wrapper>

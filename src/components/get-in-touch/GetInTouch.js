@@ -45,7 +45,7 @@ function GetInTouch() {
         is always open. Whether you have a question or just want to say hi, I'll
         try my best to get back to you!
       </div>
-      <button class="cta-btn">Say Hi</button>
+      <button className="cta-btn">Say Hi</button>
     </Wrapper>
   );
 }
