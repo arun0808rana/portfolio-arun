@@ -23,8 +23,13 @@ function Header() {
           <a href="">Experience</a>
         </li>
         <li>
-          <button className="cta-btn">Contact</button>
-        </li>
+            <a
+              href="https://arun0808rana.github.io/contact-form/"
+              target="_blank"
+            >
+              <button className="cta-btn">Contact</button>
+            </a>
+          </li>
       </ul>
 
       <div className="hamburger" onClick={() => setShowMenu(!showMenu)}>
@@ -43,7 +48,12 @@ function Header() {
             <a href="">Experience</a>
           </li>
           <li>
-            <button className="cta-btn">Contact</button>
+            <a
+              href="https://arun0808rana.github.io/contact-form/"
+              target="_blank"
+            >
+              <button className="cta-btn">Contact</button>
+            </a>
           </li>
         </ul>
       )}

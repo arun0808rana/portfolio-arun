@@ -23,15 +23,22 @@ function Projects() {
                 {project.stack.map((tech, idx) => {
                   console.log(idx, "idx");
                   return (
-                    <div className="pill"  key={`project-pills-${Math.random()}`}>
+                    <div
+                      className="pill"
+                      key={`project-pills-${Math.random()}`}
+                    >
                       {tech} {idx !== tech.length - 1 ? "|" : idx}
                     </div>
                   );
                 })}
               </div>
               <div className="social-icons">
-                <img src={octoIcon} alt="" />
-                <img src={openInNewTabIcon} alt="" />
+                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                  <img src={octoIcon} alt="" />
+                </a>
+                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                  <img src={openInNewTabIcon} alt="" />
+                </a>
               </div>
             </div>
           );
@@ -99,6 +106,9 @@ const Wrapper = styled.div`
 
     .social-icons {
       margin: 2rem 0 0;
+      a {
+        text-decoration: none;
+      }
       img {
         height: 20px;
         margin: 0 15px 0 0;
@@ -110,51 +120,67 @@ const Wrapper = styled.div`
 
 const projectsData = [
   {
-    title: "Kanban Cardz",
+    title: "Crypto Bucket",
     description:
       "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
     stack: ["react", "react-beautiful-dnd", "typescript", "nodejs"],
+    url: "https://arun0808rana.github.io/cryptobucket-rc-frontend/",
+    repo:"https://github.com/arun0808rana/cryptobucket-rc-frontend"
+  },
+  {
+    title: "Code Memoirs",
+    description:
+      "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
+    stack: ["react", "react-beautiful-dnd"],
+    url: "https://arun0808rana.github.io/code-memoirs/",
+    repo:"https://github.com/arun0808rana/code-memoirs"
+  },
+  {
+    title: "Lofi Station",
+    description:
+      "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
+    stack: ["react", "react-beautiful-dnd"],
+    url: "https://arun0808rana.github.io/lofi-rc-frontend/",
+    repo:"https://github.com/arun0808rana/lofi-rc-frontend"
+  },
+  {
+    title: "E Cardz",
+    description:
+      "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
+    stack: ["react", "react-beautiful-dnd"],
+    url: "",
+    repo: "https://github.com/arun0808rana/flix-mania-rc-frontend",
+  },
+  {
+    title: "Flix Mania",
+    description:
+      "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
+    stack: ["react", "react-beautiful-dnd"],
+    url: "https://arun0808rana.github.io/flix-mania-rc-frontend/",
+    repo: "https://github.com/arun0808rana/flix-mania-rc-frontend",
   },
   {
     title: "Kanban Cardz",
     description:
       "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
     stack: ["react", "react-beautiful-dnd"],
+    url: "https://arun0808rana.github.io/flix-mania-rc-frontend/",
+    repo: "https://github.com/arun0808rana/flix-mania-rc-frontend",
   },
   {
-    title: "Kanban Cardz",
+    title: "Radium Jobs",
     description:
       "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
     stack: ["react", "react-beautiful-dnd"],
+    url: "https://arun0808rana.github.io/radium-jobs-rc-frontend/",
+    repo: "https://github.com/arun0808rana/radium-jobs-rc-frontend",
   },
   {
-    title: "Kanban Cardz",
+    title: "UI Form",
     description:
       "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
     stack: ["react", "react-beautiful-dnd"],
-  },
-  {
-    title: "Kanban Cardz",
-    description:
-      "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
-    stack: ["react", "react-beautiful-dnd"],
-  },
-  {
-    title: "Kanban Cardz",
-    description:
-      "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
-    stack: ["react", "react-beautiful-dnd"],
-  },
-  {
-    title: "Kanban Cardz",
-    description:
-      "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
-    stack: ["react", "react-beautiful-dnd"],
-  },
-  {
-    title: "Kanban Cardz",
-    description:
-      "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
-    stack: ["react", "react-beautiful-dnd"],
+    url: "https://arun0808rana.github.io/ui-form/",
+    repo: "https://arun0808rana.github.io/ui-form/",
   },
 ];

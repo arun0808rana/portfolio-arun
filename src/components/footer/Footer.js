@@ -14,6 +14,7 @@ function Footer() {
       <div className="foot-note">
         Designed by <span>Arun Rana</span>
       </div>
+
     </Wrapper>
   );
 }
