@@ -125,15 +125,15 @@ const projectsData = [
   {
     title: "Crypto Bucket",
     description:
-      "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
-    stack: ["react", "sass", "react-bootstrap"],
+      "A crptocurrency monitor which shows realtime data and a fusion chart analysis to track down every famous e-coin.",
+    stack: ["react", "sass", "react-bootstrap", "fusion-charts"],
     url: "https://arun0808rana.github.io/cryptobucket-rc-frontend/",
     repo:"https://github.com/arun0808rana/cryptobucket-rc-frontend"
   },
   {
     title: "Code Memoirs",
     description:
-      "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
+      "A one spot for all your coding snippets with a easy to add feature to add your favourite or ergonomic snippets.",
     stack: ["react", "sass", "tailwindcss"],
     url: "https://arun0808rana.github.io/code-memoirs/",
     repo:"https://github.com/arun0808rana/code-memoirs"
@@ -141,7 +141,7 @@ const projectsData = [
   {
     title: "Lofi Station",
     description:
-      "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
+      "Chill out while listening to a lofi station with a preset of selected tracks. The errie background with glitches gives you a cyberpunk site experience",
     stack: ["react", "sass", "react-bootstrap"],
     url: "https://arun0808rana.github.io/lofi-rc-frontend/",
     repo:"https://github.com/arun0808rana/lofi-rc-frontend"
@@ -149,7 +149,7 @@ const projectsData = [
   {
     title: "E Cardz",
     description:
-      "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
+      "Its a web app for editing and downloading customizable templates for wedding, birthdays, other event, etc. You can customize from a curated list of preset designs and download them for free",
     stack: ["react", "sass", "react-bootstrap"],
     url: "https://arun0808rana.github.io/e-cardz/",
     repo: "https://github.com/arun0808rana/e-cardz",
@@ -157,7 +157,7 @@ const projectsData = [
   {
     title: "Flix Mania",
     description:
-      "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
+      "Just a prime video clone.",
     stack: ["react", "sass", "react-bootstrap"],
     url: "https://arun0808rana.github.io/flix-mania-rc-frontend/",
     repo: "https://github.com/arun0808rana/flix-mania-rc-frontend",
@@ -173,15 +173,15 @@ const projectsData = [
   {
     title: "Radium Jobs",
     description:
-      "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
-    stack: ["react", "sass", "react-bootstrap"],
+      "It is a single page application which provides a platform for job hunting. The basic API that powers it is Adzuna.",
+    stack: ["react", "sass", "react-bootstrap", "Material UI"],
     url: "https://arun0808rana.github.io/radium-jobs-rc-frontend/",
     repo: "https://github.com/arun0808rana/radium-jobs-rc-frontend",
   },
   {
     title: "UI Form",
     description:
-      "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
+      "Just a fun repo.",
     stack: ["react", "sass", "react-bootstrap"],
     url: "https://arun0808rana.github.io/ui-form/",
     repo: "https://github.com/arun0808rana/ui-form",
