@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components/macro";
 import ham from "../../assets/icons/menu.png";
+import hamClose from "../../assets/icons/times.svg";
 import logo from "../../assets/images/logo.png";
 
 function Header() {
@@ -33,7 +34,7 @@ function Header() {
       </ul>
 
       <div className="hamburger" onClick={() => setShowMenu(!showMenu)}>
-        <img src={ham} alt="menu" className="ham img-fluid" />
+        <img src={!showMenu ? ham : hamClose} alt="menu" className="ham img-fluid" />
       </div>
 
       {!!showMenu && (
@@ -69,6 +70,11 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-content: center;
   padding: 1rem;
+  a{
+    &:hover{
+      color:var(--primary-color)
+    }
+  }
   @media (max-width: 540px) {
     flex-direction: column;
     align-items: flex-start;

@@ -16,7 +16,7 @@ function Projects() {
                   {index < 10 ? 0 : null}
                   {index + 1}.
                 </div>
-                <div className="header">{project.title}</div>
+                <a href={project.url} target="_blank" className="header">{project.title}</a>
               </div>
               <div className="text">{project.description}</div>
               <div className="stack">
@@ -75,6 +75,10 @@ const Wrapper = styled.div`
     }
     .d-flex {
       align-items: baseline;
+      a{
+        color: var(--primary-color);
+        text-decoration: none;
+      }
     }
     .sn {
       font-family: "Roboto Mono", monospace;
