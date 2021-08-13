@@ -5,16 +5,32 @@ function Footer() {
   return (
     <Wrapper>
       <div className="footer-sm-icons">
-        <i className="fa fa-twitter" aria-hidden="true"></i>
-        <i className="fa fa-facebook" aria-hidden="true"></i>
-        <i className="fa fa-linkedin" aria-hidden="true"></i>
-        <i className="fa fa-github-alt" aria-hidden="true"></i>
+        <a
+          href="https://github.com/arun0808rana"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="fa fa-github-alt" aria-hidden="true"></i>
+        </a>
+        <a
+          href="https://twitter.com/Arun_Rana01"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/arun-rana-680800180/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
         <div className="long-line"></div>
       </div>
       <div className="foot-note">
         Designed by <span>Arun Rana</span>
       </div>
-
     </Wrapper>
   );
 }

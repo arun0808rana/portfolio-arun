@@ -22,45 +22,97 @@ function Skills() {
       <Wrapper>
         <div className="lhs">
           <div className="blobs-container d-flex">
-            <div className="blob red">
-              <img src={figma} alt="" />
+            <div className="text-center">
+              <div className="blob red">
+                <img src={figma} alt="" />
+              </div>
+              Figma
             </div>
-            <div className="blob red">
-              <img src={react} alt="" />
+
+            <div className="text-center">
+              <div className="blob red">
+                <img src={react} alt="" />
+              </div>
+              React
             </div>
-            <div className="blob red">
-              <img src={redux} alt="" />
+
+            <div className="text-center">
+              <div className="blob red">
+                <img src={redux} alt="" />
+              </div>
+              Redux
             </div>
-            <div className="blob red">
-              <img src={angular} alt="" />
+
+            <div className="text-center">
+              <div className="blob red">
+                <img src={angular} alt="" />
+              </div>
+              Angular
             </div>
-            <div className="blob red">
-              <img src={sass} alt="" />
+
+            <div className="text-center">
+              <div className="blob red">
+                <img src={sass} alt="" />
+              </div>
+              SASS
             </div>
-            <div className="blob red">
-              <img src={storybook} alt="" />
+
+            <div className="text-center">
+              <div className="blob red">
+                <img src={storybook} alt="" />
+              </div>
+              Storybook
             </div>
-            <div className="blob red">
-              <img src={bootstrap} alt="" />
+
+            <div className="text-center">
+              <div className="blob red">
+                <img src={bootstrap} alt="" />
+              </div>
+              Bootstrap
             </div>
-            <div className="blob red">
-              <img src={cssImg} alt="" />
+
+            <div className="text-center">
+              <div className="blob red">
+                <img src={cssImg} alt="" />
+              </div>
+              CSS
             </div>
-            <div className="blob red">
-              <img src={git} alt="" />
+
+            <div className="text-center">
+              <div className="blob red">
+                <img src={git} alt="" />
+              </div>
+              GIT
             </div>
-            <div className="blob red">
-              <img src={jsImg} alt="" />
+
+            <div className="text-center">
+              <div className="blob red">
+                <img src={jsImg} alt="" />
+              </div>
+              Javascript
             </div>
-            <div className="blob red">
-              <img src={tailwind} alt="" />
+
+            <div className="text-center">
+              <div className="blob red">
+                <img src={tailwind} alt="" />
+              </div>
+              Tailwind CSS
             </div>
-            <div className="blob red">
-              <img src={photoshop} alt="" />
+
+            <div className="text-center">
+              <div className="blob red">
+                <img src={photoshop} alt="" />
+              </div>
+              Photoshop
             </div>
-            <div className="blob red">
-              <img src={htmlImg} alt="" />
+
+            <div className="text-center">
+              <div className="blob red">
+                <img src={htmlImg} alt="" />
+              </div>
+              HTML
             </div>
+
           </div>
         </div>
         <div className="rhs">
@@ -77,6 +129,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* margin-bottom: 1rem; */
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -86,6 +139,7 @@ const Wrapper = styled.div`
       /* justify-content: space-between; */
       flex-wrap: wrap;
       max-width: 576px;
+      color: rgb(147 129 255);
       @media (max-width: 768px) {
         justify-content: center;
       }

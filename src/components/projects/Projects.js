@@ -21,19 +21,18 @@ function Projects() {
               <div className="text">{project.description}</div>
               <div className="stack">
                 {project.stack.map((tech, idx) => {
-                  console.log(idx, "idx");
                   return (
                     <div
                       className="pill"
                       key={`project-pills-${Math.random()}`}
                     >
-                      {tech} {idx !== tech.length - 1 ? "|" : idx}
+                      {tech} {idx < project.stack.length - 1 ? "|" : null}
                     </div>
                   );
                 })}
               </div>
               <div className="social-icons">
-                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                <a href={project.repo} target="_blank" rel="noopener noreferrer">
                   <img src={octoIcon} alt="" />
                 </a>
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
@@ -123,7 +122,7 @@ const projectsData = [
     title: "Crypto Bucket",
     description:
       "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
-    stack: ["react", "react-beautiful-dnd", "typescript", "nodejs"],
+    stack: ["react", "sass", "react-bootstrap"],
     url: "https://arun0808rana.github.io/cryptobucket-rc-frontend/",
     repo:"https://github.com/arun0808rana/cryptobucket-rc-frontend"
   },
@@ -131,7 +130,7 @@ const projectsData = [
     title: "Code Memoirs",
     description:
       "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
-    stack: ["react", "react-beautiful-dnd"],
+    stack: ["react", "sass", "tailwindcss"],
     url: "https://arun0808rana.github.io/code-memoirs/",
     repo:"https://github.com/arun0808rana/code-memoirs"
   },
@@ -139,7 +138,7 @@ const projectsData = [
     title: "Lofi Station",
     description:
       "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
-    stack: ["react", "react-beautiful-dnd"],
+    stack: ["react", "sass", "react-bootstrap"],
     url: "https://arun0808rana.github.io/lofi-rc-frontend/",
     repo:"https://github.com/arun0808rana/lofi-rc-frontend"
   },
@@ -147,7 +146,7 @@ const projectsData = [
     title: "E Cardz",
     description:
       "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
-    stack: ["react", "react-beautiful-dnd"],
+    stack: ["react", "sass", "react-bootstrap"],
     url: "",
     repo: "https://github.com/arun0808rana/flix-mania-rc-frontend",
   },
@@ -155,7 +154,7 @@ const projectsData = [
     title: "Flix Mania",
     description:
       "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
-    stack: ["react", "react-beautiful-dnd"],
+    stack: ["react", "sass", "react-bootstrap"],
     url: "https://arun0808rana.github.io/flix-mania-rc-frontend/",
     repo: "https://github.com/arun0808rana/flix-mania-rc-frontend",
   },
@@ -163,7 +162,7 @@ const projectsData = [
     title: "Kanban Cardz",
     description:
       "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
-    stack: ["react", "react-beautiful-dnd"],
+    stack: ["react", "sass", "react-bootstrap"],
     url: "https://arun0808rana.github.io/flix-mania-rc-frontend/",
     repo: "https://github.com/arun0808rana/flix-mania-rc-frontend",
   },
@@ -171,7 +170,7 @@ const projectsData = [
     title: "Radium Jobs",
     description:
       "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
-    stack: ["react", "react-beautiful-dnd"],
+    stack: ["react", "sass", "react-bootstrap"],
     url: "https://arun0808rana.github.io/radium-jobs-rc-frontend/",
     repo: "https://github.com/arun0808rana/radium-jobs-rc-frontend",
   },
@@ -179,7 +178,7 @@ const projectsData = [
     title: "UI Form",
     description:
       "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
-    stack: ["react", "react-beautiful-dnd"],
+    stack: ["react", "sass", "react-bootstrap"],
     url: "https://arun0808rana.github.io/ui-form/",
     repo: "https://arun0808rana.github.io/ui-form/",
   },

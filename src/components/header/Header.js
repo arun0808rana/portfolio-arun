@@ -20,16 +20,16 @@ function Header() {
           <a href="#projects-id">Projects</a>
         </li>
         <li>
-          <a href="">Experience</a>
+          <a href="#experience-id">Experience</a>
         </li>
         <li>
-            <a
-              href="https://arun0808rana.github.io/contact-form/"
-              target="_blank"
-            >
-              <button className="cta-btn">Contact</button>
-            </a>
-          </li>
+          <a
+            href="https://arun0808rana.github.io/contact-form/"
+            target="_blank"
+          >
+            <button className="cta-btn">Contact</button>
+          </a>
+        </li>
       </ul>
 
       <div className="hamburger" onClick={() => setShowMenu(!showMenu)}>
@@ -45,7 +45,7 @@ function Header() {
             <a href="#projects-id">Projects</a>
           </li>
           <li>
-            <a href="">Experience</a>
+            <a href="#experience-id">Experience</a>
           </li>
           <li>
             <a
@@ -79,6 +79,7 @@ const Wrapper = styled.div`
     justify-content: center;
 
     img.logo {
+      width: 60px;
       height: 60px;
       border: 4px solid var(--primary-color);
       padding: 4px;
@@ -138,7 +139,6 @@ const Wrapper = styled.div`
         font-size: 16px;
         font-weight: bold;
         border-radius: 25px;
-        background: #fff;
         width: 116px;
         height: 50px;
         cursor: pointer;
