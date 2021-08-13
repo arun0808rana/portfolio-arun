@@ -147,8 +147,8 @@ const projectsData = [
     description:
       "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
     stack: ["react", "sass", "react-bootstrap"],
-    url: "",
-    repo: "https://github.com/arun0808rana/flix-mania-rc-frontend",
+    url: "https://arun0808rana.github.io/e-cardz/",
+    repo: "https://github.com/arun0808rana/e-cardz",
   },
   {
     title: "Flix Mania",
@@ -180,6 +180,6 @@ const projectsData = [
       "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
     stack: ["react", "sass", "react-bootstrap"],
     url: "https://arun0808rana.github.io/ui-form/",
-    repo: "https://arun0808rana.github.io/ui-form/",
+    repo: "https://github.com/arun0808rana/ui-form",
   },
 ];
