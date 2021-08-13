@@ -12,7 +12,7 @@ function Landing() {
   };
 
   return (
-    <Wrapper>
+    <Wrapper id="about-me-id">
       <div className="container">
         <div className="dim-text">Hi, my name is</div>
         <div className="name">Arun Rana.</div>

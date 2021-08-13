@@ -7,7 +7,7 @@ function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <Wrapper>
+    <Wrapper id="header-id">
       <div className="logo">
         <img src={logo} alt="logo" className="img-fluid logo" />
       </div>

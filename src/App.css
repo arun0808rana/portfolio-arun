@@ -156,3 +156,18 @@ body {
     margin: auto;
   }
 }
+
+.scrollToTop {
+  display: none;
+}
+.scrollToTop.active {
+  display: inline;
+  position: fixed;
+  cursor: pointer;
+  bottom: 0px;
+  height: 45px;
+  border-radius: 100%;
+  background: #f8f7ff;
+  margin: 1rem;
+  right: 0;
+}
