@@ -4,21 +4,35 @@ import openInNewTabIcon from "../../assets/icons/open-in-new-tab.svg";
 import octoIcon from "../../assets/icons/octo.svg";
 
 function Projects() {
+  const openProject = (link) => { window.open(link, '_blank') }
   return (
     <Wrapper id="projects-id">
-      <h2 className="section-heading">Projects</h2>
+      <h2 className="section-heading">Side Projects</h2>
       <div className="flex-container">
         {projectsData.map((project, index) => {
           return (
-            <div className="card" key={`projects-card-${index}`}>
+            <div className="card" key={`projects-card-${index}`} onClick={()=>openProject(project.url)}>
               <div className="d-flex">
                 <div className="sn">
                   {index < 10 ? 0 : null}
                   {index + 1}.
                 </div>
-                <a href={project.url} target="_blank" className="header">{project.title}</a>
+                <a
+                  className="sub-heading header"
+                  href={project.url}
+                  target="_blank"
+                >
+                  {"   " + project.title}
+                </a>
               </div>
-              <div className="text">{project.description}</div>
+              <div className="text">
+                {project.description.substring(0, 100)}
+                {project.description.length -
+                  project.description.substring(0, 100).length >
+                1
+                  ? "..."
+                  : ""}
+              </div>
               <div className="stack">
                 {project.stack.map((tech, idx) => {
                   return (
@@ -31,14 +45,18 @@ function Projects() {
                   );
                 })}
               </div>
-              <div className="social-icons">
-                <a href={project.repo} target="_blank" rel="noopener noreferrer">
+              {/* <div className="social-icons">
+                <a
+                  href={project.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={octoIcon} alt="" />
                 </a>
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
                   <img src={openInNewTabIcon} alt="" />
                 </a>
-              </div>
+              </div> */}
             </div>
           );
         })}
@@ -61,28 +79,31 @@ const Wrapper = styled.div`
   }
   .card {
     width: calc(100% - 2rem);
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     margin: 1rem;
     max-width: 300px;
-    min-height: 250px;
-    border: 7px solid var(--tertiary-color);
+    min-height: 184px;
+    border: 7px solid var(--secondary-color-tint);
+    background: var(--secondary-color-tint);
     color: var(--primary-color);
-    border-radius: 25px;
-    transition: width 5s;
+    border-radius: 4px;
+    transition: transform 0.3s;
     &:hover {
-      transition: width 5s;
-      transform: translateY(-2px);
+      transition: transform 0.3s;
+      transform: translate(2px,2px);
     }
+    cursor: pointer;
     .d-flex {
       align-items: baseline;
-      a{
-        color: var(--primary-color);
+      a {
+        // color: var(--primary-color);
         text-decoration: none;
       }
     }
     .sn {
       font-family: "Roboto Mono", monospace;
       font-size: 30px;
+      color: #424242;
     }
     .header {
       font-family: "Montserrat", sans-serif;
@@ -103,7 +124,7 @@ const Wrapper = styled.div`
         border-radius: 25px;
         margin: 0 10px 0 0;
         font-family: "Roboto Mono", monospace;
-        color: var(--cherry-color);
+        color: var(--tertiary-color);
       }
     }
 
@@ -128,7 +149,7 @@ const projectsData = [
       "A crptocurrency monitor which shows realtime data and a fusion chart analysis to track down every famous e-coin.",
     stack: ["react", "sass", "react-bootstrap", "fusion-charts"],
     url: "https://arun0808rana.github.io/cryptobucket-rc-frontend/",
-    repo:"https://github.com/arun0808rana/cryptobucket-rc-frontend"
+    repo: "https://github.com/arun0808rana/cryptobucket-rc-frontend",
   },
   {
     title: "Code Memoirs",
@@ -136,7 +157,7 @@ const projectsData = [
       "A one spot for all your coding snippets with a easy to add feature to add your favourite or ergonomic snippets.",
     stack: ["react", "sass", "tailwindcss"],
     url: "https://arun0808rana.github.io/code-memoirs/",
-    repo:"https://github.com/arun0808rana/code-memoirs"
+    repo: "https://github.com/arun0808rana/code-memoirs",
   },
   {
     title: "Lofi Station",
@@ -144,7 +165,7 @@ const projectsData = [
       "Chill out while listening to a lofi station with a preset of selected tracks. The errie background with glitches gives you a cyberpunk site experience",
     stack: ["react", "sass", "react-bootstrap"],
     url: "https://arun0808rana.github.io/lofi-rc-frontend/",
-    repo:"https://github.com/arun0808rana/lofi-rc-frontend"
+    repo: "https://github.com/arun0808rana/lofi-rc-frontend",
   },
   {
     title: "E Cardz",
@@ -156,20 +177,19 @@ const projectsData = [
   },
   {
     title: "Flix Mania",
-    description:
-      "Just a prime video clone.",
+    description: "Just a prime video clone.",
     stack: ["react", "sass", "react-bootstrap"],
     url: "https://arun0808rana.github.io/flix-mania-rc-frontend/",
     repo: "https://github.com/arun0808rana/flix-mania-rc-frontend",
   },
-  {
-    title: "Kanban Cardz",
-    description:
-      "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
-    stack: ["react", "sass", "react-bootstrap"],
-    url: "https://arun0808rana.github.io/flix-mania-rc-frontend/",
-    repo: "https://github.com/arun0808rana/flix-mania-rc-frontend",
-  },
+  // {
+  //   title: "Kanban Cardz",
+  //   description:
+  //     "A kanban board alternative for managing and arranging your daily work at a single place in an intutive manner.",
+  //   stack: ["react", "sass", "react-bootstrap"],
+  //   url: "https://arun0808rana.github.io/flix-mania-rc-frontend/",
+  //   repo: "https://github.com/arun0808rana/flix-mania-rc-frontend",
+  // },
   {
     title: "Radium Jobs",
     description:
@@ -180,8 +200,7 @@ const projectsData = [
   },
   {
     title: "UI Form",
-    description:
-      "Just a fun repo.",
+    description: "Just a fun repo.",
     stack: ["react", "sass", "react-bootstrap"],
     url: "https://arun0808rana.github.io/ui-form/",
     repo: "https://github.com/arun0808rana/ui-form",

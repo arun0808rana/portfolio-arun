@@ -29,7 +29,7 @@ function Footer() {
         <div className="long-line"></div>
       </div>
       <div className="foot-note">
-        Designed by <span>Arun Rana</span>
+         <span>Designed by Arun Rana</span>
       </div>
     </Wrapper>
   );
@@ -61,7 +61,7 @@ const Wrapper = styled.div`
     font-size: 14px;
     color: var(--primary-color);
     span {
-      color: var(--secondary-color);
+      color: var(--cherry-color);
     }
   }
 `;

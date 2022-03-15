@@ -11,15 +11,25 @@ function Landing() {
    });
   };
 
+  const downloadResume = () => { 
+    window.open('https://github.com/arun0808rana/resumee/raw/main/Arun%20Rana%20Nov%202021%20Resume.pdf', '_blank')
+   }
+
   return (
     <Wrapper id="about-me-id">
       <div className="container">
         <div className="dim-text">Hi, my name is</div>
         <div className="name">Arun Rana.</div>
-        <div className="hobby">I build things for the web.</div>
-        <button className="cta-btn" onClick={scollToProjects}>
+        <div className="hobby">I build modern solutions for the web.</div>
+        <div className="">
+        <button className="cta-btn-outline" onClick={downloadResume}>
+          Download Resume
+        </button>
+
+        <button className="cta-btn-filled" onClick={scollToProjects}>
           See Projects
         </button>
+        </div>
       </div>
       <ScrollDown />
     </Wrapper>
@@ -41,7 +51,7 @@ const Wrapper = styled.div`
   .container {
     margin-bottom: 20vh;
     .dim-text {
-      color: var(--tertiary-color);
+      color: var(--text-color);
     }
     .name {
       font-size: clamp(50px, 8vw, 80px);
@@ -51,7 +61,8 @@ const Wrapper = styled.div`
     }
 
     .hobby {
-      margin-top: 10px;
+      margin: 1rem auto 3rem;
+      
       color: var(--primary-color-tint);
       line-height: 0.9;
       font-size: clamp(40px, 8vw, 80px);
@@ -59,10 +70,15 @@ const Wrapper = styled.div`
       font-weight: bold;
     }
 
-    .cta-btn {
+    /* .cta-btn {
       margin-top: 2rem;
       width: fit-content;
-      padding: 1rem;
-    }
+      padding: 16px 32px;
+      background-color:var(--secondary-color);
+      color:var(--primary-bg);
+      height:auto;
+      border:none;
+      border-radius:4px;
+    } */
   }
 `;

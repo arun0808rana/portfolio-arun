@@ -14,24 +14,13 @@ const Wrapper = styled.div`
 
   .content {
     margin: 2rem auto;
-    max-width: 500px;
+    max-width: 800px;
     width: calc(100% - 2rem);
     padding: 0 1rem;
   }
 
-  .cta-btn {
-    border: 2px solid var(--cherry-color);
-    color: var(--cherry-color);
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 25px;
-    width: 116px;
-    height: 50px;
-    margin: 1rem;
-    cursor: pointer;
-    &:hover {
-      background-color: var(--chery-color-tint);
-    }
+  .cta-btn-filled {
+    margin-bottom: 2rem;
   }
 `;
 
@@ -48,7 +37,7 @@ function GetInTouch() {
           footer.
         </div>
         <a href="https://arun0808rana.github.io/contact-form/" target="_blank">
-          <button className="cta-btn">Say Hi</button>
+          <button className="cta-btn-filled">Say Hi</button>
         </a>
       </div>
     </Wrapper>

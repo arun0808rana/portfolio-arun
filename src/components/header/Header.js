@@ -9,9 +9,7 @@ function Header() {
 
   return (
     <Wrapper id="header-id">
-      <div className="logo">
-        <img src={logo} alt="logo" className="img-fluid logo" />
-      </div>
+      <div className="logo">A.</div>
 
       <ul className="desktop-menu">
         <li>
@@ -28,13 +26,17 @@ function Header() {
             href="https://arun0808rana.github.io/contact-form/"
             target="_blank"
           >
-            <button className="cta-btn">Contact</button>
+            <button className="cta-btn-filled">Contact</button>
           </a>
         </li>
       </ul>
 
       <div className="hamburger" onClick={() => setShowMenu(!showMenu)}>
-        <img src={!showMenu ? ham : hamClose} alt="menu" className="ham img-fluid" />
+        <img
+          src={!showMenu ? ham : hamClose}
+          alt="menu"
+          className="ham img-fluid"
+        />
       </div>
 
       {!!showMenu && (
@@ -69,10 +71,10 @@ const Wrapper = styled.div`
   position: relative;
   justify-content: space-between;
   align-content: center;
-  padding: 1rem;
-  a{
-    &:hover{
-      color:var(--primary-color)
+  padding: 0 2.5rem;
+  a {
+    &:hover {
+      color: var(--primary-color);
     }
   }
   @media (max-width: 540px) {
@@ -83,11 +85,13 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-
+    font-size: 56px;
+    font-weight: 500;
+    color:var(--tertiary-color);
     img.logo {
       width: 60px;
       height: 60px;
-      border: 4px solid var(--primary-color);
+      border: 2px solid var(--tertiary-color);
       padding: 4px;
       border-radius: 100%;
       @media (max-width: 540px) {
@@ -150,9 +154,9 @@ const Wrapper = styled.div`
         cursor: pointer;
         letter-spacing: 0.1rem;
 
-        &:hover {
-          background-color: var(--chery-color-tint);
-        }
+        /* &:hover {
+          background-color: var(--chery-color);
+        } */
       }
     }
   }

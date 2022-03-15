@@ -139,7 +139,7 @@ const Wrapper = styled.div`
       /* justify-content: space-between; */
       flex-wrap: wrap;
       max-width: 576px;
-      color: rgb(147 129 255);
+      color: var(--secondary-color);
       @media (max-width: 768px) {
         justify-content: center;
       }
@@ -215,7 +215,7 @@ const Wrapper = styled.div`
   @keyframes pulse-red {
     0% {
       transform: scale(0.95);
-      box-shadow: 0 0 0 0 rgba(147, 129, 255, 0.7);
+      box-shadow: 0 0 0 0 rgb(250 83 83 / 70%);
     }
 
     70% {

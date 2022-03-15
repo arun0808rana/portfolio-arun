@@ -8,6 +8,7 @@ import Skills from "./components/skills/Skills";
 import Experience from "./components/experience/Experience";
 import React from "react";
 import chevronUp from "./assets/icons/chevron-up.svg";
+import OfficeProjects from "./components/OfficeProjects/OfficeProjects";
 
 function App() {
   const scrollerRef = React.useRef();
@@ -42,6 +43,7 @@ function App() {
         <Header />
         <Landing />
         <Experience />
+        <OfficeProjects/>
         <Projects />
         <Skills />
         <GetInTouch />
