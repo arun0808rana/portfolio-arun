@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components/macro";
 import skillsBanner from "../../assets/images/bro.svg";
+import skillsBannerBlack from "../../assets/images/skills black.svg";
+
 import figma from "../../assets/images/figma.svg";
 import react from "../../assets/images/react.svg";
 import redux from "../../assets/images/redux.svg";
@@ -78,12 +80,12 @@ function Skills() {
               CSS
             </div>
 
-            <div className="text-center">
+            {/* <div className="text-center">
               <div className="blob red">
                 <img src={git} alt="" />
               </div>
               GIT
-            </div>
+            </div> */}
 
             <div className="text-center">
               <div className="blob red">
@@ -116,7 +118,7 @@ function Skills() {
           </div>
         </div>
         <div className="rhs">
-          <img src={skillsBanner} alt="skills" className="skills-banner" />
+          <img src={skillsBannerBlack} alt="skills" className="skills-banner" />
         </div>
       </Wrapper>
     </>

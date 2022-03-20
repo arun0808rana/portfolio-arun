@@ -87,7 +87,7 @@ const Wrapper = styled.div`
     justify-content: center;
     font-size: 56px;
     font-weight: 500;
-    color:var(--tertiary-color);
+    color:var(--secondary-color);
     img.logo {
       width: 60px;
       height: 60px;
@@ -140,12 +140,15 @@ const Wrapper = styled.div`
       a {
         padding: 1rem;
         text-decoration: none;
-        color: var(--tertiary-color);
+        color: var(--secondary-color);
         letter-spacing: 0.1rem;
+        &:hover{
+          
+        }
       }
       .cta-btn {
-        border: 2px solid var(--cherry-color);
-        color: var(--cherry-color);
+        border: 2px solid var(--primary-color);
+        color: var(--primary-color);
         font-size: 16px;
         font-weight: bold;
         border-radius: 25px;

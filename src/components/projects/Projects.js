@@ -83,10 +83,10 @@ const Wrapper = styled.div`
     margin: 1rem;
     max-width: 300px;
     min-height: 184px;
-    border: 7px solid var(--secondary-color-tint);
-    background: var(--secondary-color-tint);
+    border: 4px solid var(--secondary-color);
+    /* background: var(--primary-color); */
     color: var(--primary-color);
-    border-radius: 4px;
+    border-radius: 20px;
     transition: transform 0.3s;
     &:hover {
       transition: transform 0.3s;
@@ -103,7 +103,7 @@ const Wrapper = styled.div`
     .sn {
       font-family: "Roboto Mono", monospace;
       font-size: 30px;
-      color: #424242;
+      color: var(--tertiary-color);
     }
     .header {
       font-family: "Montserrat", sans-serif;
@@ -124,7 +124,9 @@ const Wrapper = styled.div`
         border-radius: 25px;
         margin: 0 10px 0 0;
         font-family: "Roboto Mono", monospace;
-        color: var(--tertiary-color);
+        color: var(--secondary-color);
+        font-weight: 700;
+        font-size: 14px;
       }
     }
 
