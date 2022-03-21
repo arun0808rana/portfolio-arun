@@ -6,7 +6,7 @@
   width: 2px;
   top: -20px;
   background: var(--secondary-color);
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .timeline {
@@ -63,7 +63,7 @@
   border: 2px solid var(--tertiary-color);
   right: -9px;
   top: 24px;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .timeline ul li:nth-child(even):before {
@@ -76,7 +76,7 @@
   border: 2px solid var(--tertiary-color);
   left: -7px;
   top: 24px;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .timeline ul li:nth-child(odd) .left_content {

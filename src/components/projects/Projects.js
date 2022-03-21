@@ -2,36 +2,54 @@ import React from "react";
 import styled from "styled-components/macro";
 import openInNewTabIcon from "../../assets/icons/open-in-new-tab.svg";
 import octoIcon from "../../assets/icons/octo.svg";
+import RightArrow from "../../assets/icons/bi_arrow-right.svg";
+import ProjectModal from "../projectModal/ProjectModal";
 
 function Projects() {
-  const openProject = (link) => { window.open(link, '_blank') }
+  const openProject = (link) => {
+    window.open(link, "_blank");
+  };
   return (
     <Wrapper id="projects-id">
       <h2 className="section-heading">Side Projects</h2>
       <div className="flex-container">
-        {projectsData.map((project, index) => {
+        {projectsData.slice(0,6).map((project, index) => {
           return (
-            <div className="card" key={`projects-card-${index}`} onClick={()=>openProject(project.url)}>
-              <div className="d-flex">
-                <div className="sn">
-                  {index < 10 ? 0 : null}
-                  {index + 1}.
-                </div>
-                <a
+            <div
+              className="card"
+              key={`projects-card-${index}`}
+              onClick={() => openProject(project.url)}
+            >
+              <div>
+                {" "}
+                <div className="d-flex">
+                  <div className="sn">
+                    {index < 10 ? 0 : null}
+                    {index + 1}.
+                  </div>
+                  {/* <a
                   className="sub-heading header"
                   href={project.url}
                   target="_blank"
                 >
                   {"   " + project.title}
-                </a>
-              </div>
-              <div className="text">
-                {project.description.substring(0, 100)}
-                {project.description.length -
-                  project.description.substring(0, 100).length >
-                1
-                  ? "..."
-                  : ""}
+                </a> */}
+
+                  <div className="sub-heading header">
+                    <div className="title-heading">{project.title}</div>
+                    <div className="arrow">
+                      <img src={RightArrow} alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div className="text">
+                  {project.description.substring(0, 95)}
+                  {project.description.length -
+                    project.description.substring(0, 95).length >
+                  1
+                    ? "..."
+                    : ""}
+                </div>
               </div>
               <div className="stack">
                 {project.stack.map((tech, idx) => {
@@ -61,6 +79,8 @@ function Projects() {
           );
         })}
       </div>
+
+      <ProjectModal />
     </Wrapper>
   );
 }
@@ -78,19 +98,22 @@ const Wrapper = styled.div`
     }
   }
   .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: calc(100% - 2rem);
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem 1rem;
     margin: 1rem;
-    max-width: 300px;
-    min-height: 184px;
-    border: 4px solid var(--secondary-color);
+    max-width: 450px;
+    min-height: 100px;
+    border: 2px solid var(--tertiary-color);
     /* background: var(--primary-color); */
     color: var(--primary-color);
-    border-radius: 20px;
+    border-radius: 10px;
     transition: transform 0.3s;
     &:hover {
       transition: transform 0.3s;
-      transform: translate(2px,2px);
+      transform: translate(-2px, 2px);
     }
     cursor: pointer;
     .d-flex {
@@ -106,17 +129,23 @@ const Wrapper = styled.div`
       color: var(--tertiary-color);
     }
     .header {
+      display: flex;
+      align-items: center;
       font-family: "Montserrat", sans-serif;
       font-weight: bold;
       font-size: 24px;
+      img {
+        height: 30px;
+        margin: 6px 0 0 0.5rem;
+      }
     }
     .text {
-      margin: 1rem 0;
+      margin: 0.5rem 0;
     }
     .stack {
       display: flex;
       flex-wrap: wrap;
-      margin-top: 1rem;
+      margin-top: 0.5rem;
       .pill {
         /* border: 1px solid var(--primary-color); */
         width: fit-content;
@@ -146,6 +175,21 @@ const Wrapper = styled.div`
 
 const projectsData = [
   {
+    title: "Radium Jobs",
+    description:
+      "It is a single page application which provides a platform for job hunting. The basic API that powers it is Adzuna.",
+    stack: ["react", "sass", "react-bootstrap", "Material UI"],
+    url: "https://arun0808rana.github.io/radium-jobs-rc-frontend/",
+    repo: "https://github.com/arun0808rana/radium-jobs-rc-frontend",
+  },
+  {
+    title: "News App",
+    description: "Displays top 25 news in various fields.",
+    stack: ["react", "sass", "react-bootstrap"],
+    url: "https://arun0808rana.github.io/react-news/",
+    repo: "https://github.com/arun0808rana/react-news",
+  },
+  {
     title: "Crypto Bucket",
     description:
       "A crptocurrency monitor which shows realtime data and a fusion chart analysis to track down every famous e-coin.",
@@ -170,6 +214,13 @@ const projectsData = [
     repo: "https://github.com/arun0808rana/lofi-rc-frontend",
   },
   {
+    title: "Flix Mania",
+    description: "Just a prime video clone.",
+    stack: ["react", "sass", "react-bootstrap"],
+    url: "https://arun0808rana.github.io/flix-mania-rc-frontend/",
+    repo: "https://github.com/arun0808rana/flix-mania-rc-frontend",
+  },
+  {
     title: "E Cardz",
     description:
       "Its a web app for editing and downloading customizable templates for wedding, birthdays, other event, etc. You can customize from a curated list of preset designs and download them for free",
@@ -177,13 +228,7 @@ const projectsData = [
     url: "https://arun0808rana.github.io/e-cardz/",
     repo: "https://github.com/arun0808rana/e-cardz",
   },
-  {
-    title: "Flix Mania",
-    description: "Just a prime video clone.",
-    stack: ["react", "sass", "react-bootstrap"],
-    url: "https://arun0808rana.github.io/flix-mania-rc-frontend/",
-    repo: "https://github.com/arun0808rana/flix-mania-rc-frontend",
-  },
+
   // {
   //   title: "Kanban Cardz",
   //   description:
@@ -192,19 +237,27 @@ const projectsData = [
   //   url: "https://arun0808rana.github.io/flix-mania-rc-frontend/",
   //   repo: "https://github.com/arun0808rana/flix-mania-rc-frontend",
   // },
+
   {
-    title: "Radium Jobs",
-    description:
-      "It is a single page application which provides a platform for job hunting. The basic API that powers it is Adzuna.",
-    stack: ["react", "sass", "react-bootstrap", "Material UI"],
-    url: "https://arun0808rana.github.io/radium-jobs-rc-frontend/",
-    repo: "https://github.com/arun0808rana/radium-jobs-rc-frontend",
+    title: "HTML2JSX",
+    description: "Converts HTML to react compatible JSX.",
+    stack: ["react"],
+    url: "http://arun0808rana.github.io/html2jsx-rc-frontend/",
+    repo: "https://github.com/arun0808rana/html2jsx-rc-frontend",
   },
   {
-    title: "UI Form",
-    description: "Just a fun repo.",
-    stack: ["react", "sass", "react-bootstrap"],
-    url: "https://arun0808rana.github.io/ui-form/",
-    repo: "https://github.com/arun0808rana/ui-form",
+    title: "Youtube Media Downloader",
+    description: "Based on youtube-dl downloads media from youtube.",
+    stack: ["react", "tailwind"],
+    url: "http://arun0808rana.github.io/youtube-dl-gui-client",
+    repo: "https://github.com/arun0808rana/youtube-dl-gui-client",
+  },
+  {
+    title: "React Webpack Boilerplate",
+    description:
+      "A quick boilerplate reproducing ergonomic setting up of react app.",
+    stack: ["react", "sass", "webpack"],
+    url: "https://github.com/arun0808rana/react-webpack.git",
+    repo: "https://github.com/arun0808rana/webpack-react-boilerplate",
   },
 ];

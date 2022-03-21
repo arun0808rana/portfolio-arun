@@ -137,6 +137,9 @@ const Wrapper = styled.div`
     align-items: center;
   }
   .lhs {
+    @media (max-width: 768px) {
+      order:2;
+    }
     .blobs-container {
       /* justify-content: space-between; */
       flex-wrap: wrap;
