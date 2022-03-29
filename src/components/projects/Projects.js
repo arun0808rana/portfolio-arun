@@ -1,19 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components/macro";
 import openInNewTabIcon from "../../assets/icons/open-in-new-tab.svg";
 import octoIcon from "../../assets/icons/octo.svg";
 import RightArrow from "../../assets/icons/bi_arrow-right.svg";
 import ProjectModal from "../projectModal/ProjectModal";
 
-function Projects() {
+function Projects({isInsideModal}) {
+  const [projects, setProjects] = useState(isInsideModal ? projectsData : projectsData.slice(0,6))
   const openProject = (link) => {
     window.open(link, "_blank");
   };
+  
   return (
     <Wrapper id="projects-id">
-      <h2 className="section-heading">Side Projects</h2>
+      {isInsideModal ? null : <h2 className="section-heading">Side Projects</h2>}
       <div className="flex-container">
-        {projectsData.slice(0,6).map((project, index) => {
+        {projects.map((project, index) => {
           return (
             <div
               className="card"
@@ -80,7 +82,7 @@ function Projects() {
         })}
       </div>
 
-      <ProjectModal />
+      {isInsideModal ? null : <ProjectModal />}
     </Wrapper>
   );
 }

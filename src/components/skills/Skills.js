@@ -3,19 +3,21 @@ import styled from "styled-components/macro";
 import skillsBanner from "../../assets/images/bro.svg";
 import skillsBannerBlack from "../../assets/images/skills black.svg";
 
-import figma from "../../assets/images/figma.svg";
-import react from "../../assets/images/react.svg";
-import redux from "../../assets/images/redux.svg";
-import angular from "../../assets/images/ng.svg";
-import sass from "../../assets/images/sass.svg";
-import storybook from "../../assets/images/storybook.svg";
-import tailwind from "../../assets/images/tailwind.svg";
-import jsImg from "../../assets/images/js.svg";
-import cssImg from "../../assets/images/css.svg";
-import htmlImg from "../../assets/images/html.svg";
-import bootstrap from "../../assets/images/bootstrap.svg";
-import photoshop from "../../assets/images/photoshop.svg";
+import figma from "../../assets/icons/skills/figma.png";
+import react from "../../assets/icons/skills/react.png";
+import redux from "../../assets/icons/skills/redux.png";
+import angular from "../../assets/icons/skills/angular.png";
+import sass from "../../assets/icons/skills/sass.png";
+import storybook from "../../assets/icons/skills/storybook.png";
+import tailwind from "../../assets/icons/skills/tailwind.png";
+import jsImg from "../../assets/icons/skills/js.png";
+import cssImg from "../../assets/icons/skills/css.png";
+import htmlImg from "../../assets/icons/skills/html.png";
+import bootstrap from "../../assets/icons/skills/bootstrap.png";
+// import photoshop from "../../assets/images/photoshop.svg";
 import git from "../../assets/images/git.svg";
+import photoshop from "../../assets/icons/skills/photoshop.png";
+
 
 function Skills() {
   return (
@@ -165,8 +167,9 @@ const Wrapper = styled.div`
     width: 70px;
     transform: scale(1);
     animation: pulse-black 2s infinite;
+    display: flex;align-items: center;justify-content: center;
     img {
-      height: 70px;
+      height: 50px;
       max-width: 100%;
     }
   }
@@ -214,7 +217,7 @@ const Wrapper = styled.div`
   .blob.red {
     background: var(--primary-bg);
     box-shadow: 0 0 0 0 rgba(147, 129, 255, 1);
-    animation: pulse-red 2s infinite;
+    animation: pulse-black 2s infinite;
   }
 
   @keyframes pulse-red {

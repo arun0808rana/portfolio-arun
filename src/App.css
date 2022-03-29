@@ -180,6 +180,16 @@ body {
   right: 0;
 }
 
+.Modal{
+  position: absolute;
+  inset: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 10px;
+}
 .Overlay {
   position: fixed;
   top: 0;

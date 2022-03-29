@@ -97,18 +97,18 @@ const TextWrapper = styled.div`
       color: var(--text-color);
     }
     .name {
-      font-size: clamp(50px, 8vw, 60px);
+      font-size: clamp(50px, 8vw, 75px);
       font-weight: 600;
       line-height: 1.1;
-      color: var(--secondary-color);
+      color: var(--primary-color);
     }
 
     .hobby {
       margin: 1rem auto 3rem;
 
-      color: var(--primary-color-tint);
+      color: var(--secondary-color);
       line-height: 0.9;
-      font-size: clamp(40px, 8vw, 75px);
+      font-size: clamp(40px, 8vw, 60px);
       font-family: "Montserrat", sans-serif;
       font-weight: bold;
     }

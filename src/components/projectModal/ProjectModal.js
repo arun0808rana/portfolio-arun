@@ -45,14 +45,14 @@ function ProjectModal() {
         onRequestClose={closeModal}
         // style={customStyles}
         contentLabel="Example Modal"
-        // className="Modal"
+        className="Modal"
         overlayClassName="Overlay"
       >
         {/* <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2> */}
         <button className="modal-close-btn" onClick={closeModal}>
           &times;
         </button>
-        <Projects />
+        <Projects isInsideModal/>
       </Modal>
     </div>
   );
