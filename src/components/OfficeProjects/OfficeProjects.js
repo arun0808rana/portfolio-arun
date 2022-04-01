@@ -4,29 +4,31 @@ import OpenLink from "../../assets/icons/akar-icons_link-out.svg";
 import Menda from "../../assets/images/menda.png";
 import HabitBetter from "../../assets/images/habit better.png";
 import GLPlus from "../../assets/images/gl plus.png";
+import ProjectData from "./ProjectData";
 
 function OfficeProjects() {
   return (
-    <Wrapper>
+    <Wrapper id="projects-id">
       <h2 className="section-heading">Projects</h2>
 
-      {[1, 1, 1].map((project, index) => {
+      {ProjectData.map((project, index) => {
         return (
-          <div className="project-card">
+          <div className="project-card" key={`office-projects=${index}`}>
             <div className="lhs">
-              <div className="title">GL Plus Grocery Store</div>
-              <div className="description">
-                I made inventory pages and homepage for the website using react,
-                redux and styled components. I solved various problems in
-                inventory management pages as well.
-              </div>
+              <div className="title">{project.title}</div>
+              <div className="description">{project.description}</div>
               <div className="link">
-                <a href="#" className="txt">See website here</a>
-                <img src={OpenLink} alt="open website in new tab" />
+                <a href={project.url} target="_blank" className="txt">
+                  See website here
+                  <img src={OpenLink} alt="open website in new tab" />
+                </a>
               </div>
             </div>
             <div className="rhs">
-              <img src={Menda} alt="project screenshot" />
+              <img
+                src={index == 0 ? Menda : index == 1 ? GLPlus : HabitBetter}
+                alt="project screenshot"
+              />
             </div>
           </div>
         );
@@ -42,6 +44,7 @@ const Wrapper = styled.div`
   .project-card {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     @media (max-width: 768px) {
       justify-content: center;
     }
@@ -63,20 +66,40 @@ const Wrapper = styled.div`
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
-        color: #000000;
+        color: var(--primary-color);
         margin: 1rem 0;
+
+        @media (max-width: 768px) {
+          max-width: 265px;
+        }
       }
       .link {
         display: flex;
         align-items: center;
         .txt {
           margin-right: 0.5rem;
+          color: var(--primary-color);
+          &:visited {
+            color: var(--primary-color);
+          }
+          display: flex;
+        }
+        img {
+          display: block;
+          margin: 2px 0 0 0.5rem;
         }
       }
     }
     .rhs {
       @media (max-width: 768px) {
         order: 1;
+      }
+      img {
+        filter: grayscale(100%);
+        &:hover {
+          filter: none;
+        }
+        transition-duration: 0.3s;
       }
     }
   }

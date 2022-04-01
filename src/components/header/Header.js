@@ -12,14 +12,17 @@ function Header() {
       <div className="logo">A.</div>
 
       <ul className="desktop-menu">
-        <li>
+        {/* <li>
           <a href="#">About </a>
-        </li>
+        </li> */}
         <li>
           <a href="#projects-id">Projects</a>
         </li>
         <li>
           <a href="#experience-id">Experience</a>
+        </li>
+        <li>
+          <a href="#side-projects-id">Side Projects</a>
         </li>
         <li>
           <a
@@ -49,6 +52,9 @@ function Header() {
           </li>
           <li>
             <a href="#experience-id">Experience</a>
+          </li>
+          <li>
+            <a href="#side-projects-id">Side Projects</a>
           </li>
           <li>
             <a
@@ -87,7 +93,7 @@ const Wrapper = styled.div`
     justify-content: center;
     font-size: 56px;
     font-weight: 500;
-    color:var(--secondary-color);
+    color: var(--secondary-color);
     img.logo {
       width: 60px;
       height: 60px;
@@ -142,8 +148,7 @@ const Wrapper = styled.div`
         text-decoration: none;
         color: var(--secondary-color);
         letter-spacing: 0.1rem;
-        &:hover{
-          
+        &:hover {
         }
       }
       .cta-btn {

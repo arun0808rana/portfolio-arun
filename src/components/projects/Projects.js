@@ -12,7 +12,7 @@ function Projects({isInsideModal}) {
   };
   
   return (
-    <Wrapper id="projects-id">
+    <Wrapper id="side-projects-id">
       {isInsideModal ? null : <h2 className="section-heading">Side Projects</h2>}
       <div className="flex-container">
         {projects.map((project, index) => {
