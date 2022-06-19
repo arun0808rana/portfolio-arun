@@ -8,6 +8,7 @@ import ProjectModal from "../projectModal/ProjectModal";
 function Projects({isInsideModal}) {
   const [projects, setProjects] = useState(isInsideModal ? projectsData : projectsData.slice(0,6))
   const openProject = (link) => {
+    console.log('link', link)
     window.open(link, "_blank");
   };
   
@@ -17,10 +18,13 @@ function Projects({isInsideModal}) {
       <div className="flex-container">
         {projects.map((project, index) => {
           return (
-            <div
+            <a
               className="card"
               key={`projects-card-${index}`}
+              href={project.url}
+              target="_blank"
               onClick={() => openProject(project.url)}
+              // onMouseDown={openProject(project.url)}
             >
               <div>
                 {" "}
@@ -77,7 +81,7 @@ function Projects({isInsideModal}) {
                   <img src={openInNewTabIcon} alt="" />
                 </a>
               </div> */}
-            </div>
+            </a>
           );
         })}
       </div>
@@ -100,6 +104,7 @@ const Wrapper = styled.div`
     }
   }
   .card {
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import skillsBanner from "../../assets/images/bro.svg";
-import skillsBannerBlack from "../../assets/images/skills black.svg";
+import skillsBannerBlack from "../../assets/images/skills black.png";
 
 import figma from "../../assets/icons/skills/figma.png";
 import react from "../../assets/icons/skills/react.png";
@@ -17,7 +17,6 @@ import bootstrap from "../../assets/icons/skills/bootstrap.png";
 // import photoshop from "../../assets/images/photoshop.svg";
 import git from "../../assets/images/git.svg";
 import photoshop from "../../assets/icons/skills/photoshop.png";
-
 
 function Skills() {
   return (
@@ -116,7 +115,6 @@ function Skills() {
               </div>
               HTML
             </div>
-
           </div>
         </div>
         <div className="rhs">
@@ -140,7 +138,7 @@ const Wrapper = styled.div`
   }
   .lhs {
     @media (max-width: 768px) {
-      order:2;
+      order: 2;
     }
     .blobs-container {
       /* justify-content: space-between; */
@@ -154,9 +152,13 @@ const Wrapper = styled.div`
   }
 
   .rhs {
+    padding: 0;
+    @media (max-width: 768px) {
+      padding: 0 16px;
+    }
     img {
       max-width: 100%;
-      height: 50vh;
+      /* height: 50vh; */
     }
   }
   .blob {
@@ -167,7 +169,9 @@ const Wrapper = styled.div`
     width: 70px;
     transform: scale(1);
     animation: pulse-black 2s infinite;
-    display: flex;align-items: center;justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     img {
       height: 50px;
       max-width: 100%;
