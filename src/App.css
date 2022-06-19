@@ -1,43 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-
-
-
-
-
-
-
-
-
-/* :root {
-  --primary-color: #0066FF;
-  --secondary-color: #FF5C00;
-  --tertiary-color: #00C395;
-  --text-color: #4f6d98;
-
-  --primary-color-tint: #61a0ff;
-  --secondary-color-tint: #ffede2;
-  --tertiary-color-tint: #d3fff5;
-} */
-
-/* --secondary-color: #FF8A5B;
- */
-/* --primary-bg: #131515; */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 :root {
-  --primary-color: #9381FF;
-  --secondary-color: #274060;
-  --tertiary-color: #274060;
-  --text-color: #4f6d98;
-
-  --primary-color-tint: #B8B8FF;
-  --secondary-color-tint: #FFEEDD;
-  --tertiary-color-tint: #d3fff5;
-
-  --primary-bg: #F8F7FF;
-
-  --cherry-color: #fa5353;
-  --chery-color-tint: #ffe4e4;
+  --primary-color: #000;
+  --secondary-color: #3d3d3d;
+  --tertiary-color: #dedede;
+  --primary-bg: #ffffff;
+  --hover-primary-color: #161616;
+  --cherry-color: #ffe0b5b3;
 }
 
 body {
@@ -48,17 +18,22 @@ body {
 
 .section-heading {
   font-size: clamp(40px, 5vw, 60px);
-  margin: 3rem;
+  margin: 5rem;
   font-weight: 600;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   line-height: 1.1;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
+  margin-top: 10rem;
+}
+
+.sub-heading {
+  color: var(--primary-color);
 }
 
 .text {
   color: var(--text-color);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
 
@@ -67,8 +42,8 @@ body {
 }
 
 .cta-btn {
-  border: 2px solid var(--cherry-color);
-  color: var(--cherry-color);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 
   font-size: 16px;
   font-weight: bold;
@@ -80,10 +55,146 @@ body {
   letter-spacing: 0.1rem;
 }
 
-.cta-btn:hover {
-  background-color: var(--chery-color-tint);
+.cta-btn-outline,
+.cta-btn-filled {
+  margin-right: 2rem;
 }
 
+.cta-btn-outline:hover,
+.cta-btn-filled:hover {
+  background-color: var(--hover-primary-color);
+  color: #fff;
+}
+
+.cta-btn-filled {
+  border: 2px solid transparent;
+  color: var(--primary-bg);
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  background: var(--primary-color);
+  height: auto;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.cta-btn-outline {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  background: transparent;
+  height: auto;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.modal-close-btn {
+  display: block;
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  font-size: 35px;
+}
 .d-flex {
   display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sm-icons {
+  display: none;
+}
+
+.see-full-list-btn {
+  margin: 1rem auto;
+  display: block;
+}
+
+@media only screen and (max-width: 1600px) {
+  .cta-btn-outline,
+  .cta-btn-filled {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section-heading {
+    margin: 5rem auto 1rem auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .sm-icons {
+    display: block;
+    position: fixed;
+    top: 75vh;
+    left: 150px;
+    text-align: center;
+  }
+
+  .sm-icons a {
+    text-decoration: none;
+  }
+  .sm-icons .fa {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+  }
+
+  .sm-icons .long-line {
+    height: 20vh;
+    width: 2px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    margin-left: 6px;
+    margin-right: 50px;
+    margin: auto;
+  }
+}
+
+.scrollToTop {
+  display: none;
+}
+.scrollToTop.active {
+  display: inline;
+  position: fixed;
+  cursor: pointer;
+  bottom: 0px;
+  height: 45px;
+  border-radius: 100%;
+  /* background: #f8f7ff; */
+  margin: 1rem;
+  right: 0;
+}
+
+.Modal{
+  position: absolute;
+  inset: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 10px;
+}
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
 }
