@@ -1,17 +1,21 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import styled from "styled-components/macro";
 import openInNewTabIcon from "../../assets/icons/open-in-new-tab.svg";
 import octoIcon from "../../assets/icons/octo.svg";
 import RightArrow from "../../assets/icons/bi_arrow-right.svg";
 import ProjectModal from "../projectModal/ProjectModal";
 
-function Projects({isInsideModal}) {
-  const [projects, setProjects] = useState(isInsideModal ? projectsData : projectsData.slice(0,6))
-  const openProject = (link) => {
-    console.log('link', link)
+function Projects({ isInsideModal }) {
+  const [projects, setProjects] = useState(isInsideModal ? projectsData : projectsData.slice(0, 6))
+  const openLink = (link) => {
     window.open(link, "_blank");
   };
-  
+  const openRepo = (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    window.open(e.target.getAttribute('data-url'), '_blank');
+  }
+
   return (
     <Wrapper id="side-projects-id">
       {isInsideModal ? null : <h2 className="section-heading">Side Projects</h2>}
@@ -23,8 +27,7 @@ function Projects({isInsideModal}) {
               key={`projects-card-${index}`}
               href={project.url}
               target="_blank"
-              onClick={() => openProject(project.url)}
-              // onMouseDown={openProject(project.url)}
+              onClick={() => openLink(project.url)}
             >
               <div>
                 {" "}
@@ -52,7 +55,7 @@ function Projects({isInsideModal}) {
                   {project.description.substring(0, 95)}
                   {project.description.length -
                     project.description.substring(0, 95).length >
-                  1
+                    1
                     ? "..."
                     : ""}
                 </div>
@@ -69,18 +72,17 @@ function Projects({isInsideModal}) {
                   );
                 })}
               </div>
-              {/* <div className="social-icons">
-                <a
-                  href={project.repo}
-                  target="_blank"
-                  rel="noopener noreferrer"
+              <div className="social-icons">
+                <span
+
                 >
-                  <img src={octoIcon} alt="" />
-                </a>
-                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                  <img data-url={project.repo}
+                    onClick={openRepo} src={octoIcon} alt="" />
+                </span>
+                {/* <a href={project.url} target="_blank" rel="noopener noreferrer">
                   <img src={openInNewTabIcon} alt="" />
-                </a>
-              </div> */}
+                </a> */}
+              </div>
             </a>
           );
         })}
@@ -110,18 +112,12 @@ const Wrapper = styled.div`
     justify-content: space-between;
     width: calc(100% - 2rem);
     padding: 0.5rem 1rem 1rem;
-    margin: 1rem;
     max-width: 450px;
     min-height: 100px;
-    border: 2px solid var(--tertiary-color);
-    /* background: var(--primary-color); */
+    border: 1px solid var(--tertiary-color);
     color: var(--primary-color);
-    border-radius: 10px;
     transition: transform 0.3s;
-    &:hover {
-      transition: transform 0.3s;
-      transform: translate(-2px, 2px);
-    }
+    margin: -0.5px;
     cursor: pointer;
     .d-flex {
       align-items: baseline;
@@ -167,7 +163,7 @@ const Wrapper = styled.div`
     }
 
     .social-icons {
-      margin: 2rem 0 0;
+      margin: 1rem 0 0;
       a {
         text-decoration: none;
       }
@@ -197,12 +193,12 @@ const projectsData = [
     repo: "https://github.com/arun0808rana/react-news",
   },
   {
-    title: "Crypto Bucket",
+    title: "Chat App Dashboard",
     description:
-      "A crptocurrency monitor which shows realtime data and a fusion chart analysis to track down every famous e-coin.",
-    stack: ["react", "sass", "react-bootstrap", "fusion-charts"],
-    url: "https://arun0808rana.github.io/cryptobucket-rc-frontend/",
-    repo: "https://github.com/arun0808rana/cryptobucket-rc-frontend",
+      "A desktop chat app ui.",
+    stack: ["react", "styled-components"],
+    url: "https://arun0808rana.github.io/chat-dashboard/",
+    repo: "https://github.com/arun0808rana/chat-dashboard",
   },
   {
     title: "Code Memoirs",
@@ -266,5 +262,13 @@ const projectsData = [
     stack: ["react", "sass", "webpack"],
     url: "https://github.com/arun0808rana/react-webpack.git",
     repo: "https://github.com/arun0808rana/webpack-react-boilerplate",
+  },
+  {
+    title: "Crypto Bucket",
+    description:
+      "A crptocurrency monitor which shows realtime data and a fusion chart analysis to track down every famous e-coin.",
+    stack: ["react", "sass", "react-bootstrap", "fusion-charts"],
+    url: "https://arun0808rana.github.io/cryptobucket-rc-frontend/",
+    repo: "https://github.com/arun0808rana/cryptobucket-rc-frontend",
   },
 ];
