@@ -182,8 +182,8 @@ const projectsData = [
     description:
       "It is a single page application which provides a platform for job hunting. The basic API that powers it is Adzuna.",
     stack: ["react", "sass", "react-bootstrap", "Material UI"],
-    url: "https://arun0808rana.github.io/radium-jobs-rc-frontend/",
-    repo: "https://github.com/arun0808rana/radium-jobs-rc-frontend",
+    url: "https://radium-jobs.netlify.app/",
+    repo: "https://github.com/arun0808rana/rad-jobs",
   },
   {
     title: "News App",
