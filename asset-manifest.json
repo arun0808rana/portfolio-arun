@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/portfolio-arun/static/css/main.017ac88f.chunk.css",
+    "main.js": "/portfolio-arun/static/js/main.e4885510.chunk.js",
+    "main.js.map": "/portfolio-arun/static/js/main.e4885510.chunk.js.map",
+    "runtime-main.js": "/portfolio-arun/static/js/runtime-main.d1fbf2da.js",
+    "runtime-main.js.map": "/portfolio-arun/static/js/runtime-main.d1fbf2da.js.map",
+    "static/js/2.3b7d200e.chunk.js": "/portfolio-arun/static/js/2.3b7d200e.chunk.js",
+    "static/js/2.3b7d200e.chunk.js.map": "/portfolio-arun/static/js/2.3b7d200e.chunk.js.map",
+    "static/js/3.9a0b14c6.chunk.js": "/portfolio-arun/static/js/3.9a0b14c6.chunk.js",
+    "static/js/3.9a0b14c6.chunk.js.map": "/portfolio-arun/static/js/3.9a0b14c6.chunk.js.map",
+    "index.html": "/portfolio-arun/index.html",
+    "static/css/main.017ac88f.chunk.css.map": "/portfolio-arun/static/css/main.017ac88f.chunk.css.map",
+    "static/js/2.3b7d200e.chunk.js.LICENSE.txt": "/portfolio-arun/static/js/2.3b7d200e.chunk.js.LICENSE.txt",
+    "static/media/akar-icons_link-out.e814779d.svg": "/portfolio-arun/static/media/akar-icons_link-out.e814779d.svg",
+    "static/media/bi_arrow-right.128a3e37.svg": "/portfolio-arun/static/media/bi_arrow-right.128a3e37.svg",
+    "static/media/bro.3f43c666.svg": "/portfolio-arun/static/media/bro.3f43c666.svg",
+    "static/media/chevron-up.8e82a863.svg": "/portfolio-arun/static/media/chevron-up.8e82a863.svg",
+    "static/media/git.0f19aba6.svg": "/portfolio-arun/static/media/git.0f19aba6.svg",
+    "static/media/gl plus.9688b130.png": "/portfolio-arun/static/media/gl plus.9688b130.png",
+    "static/media/habit better.ebad903f.png": "/portfolio-arun/static/media/habit better.ebad903f.png",
+    "static/media/landing_banner.0fd58160.png": "/portfolio-arun/static/media/landing_banner.0fd58160.png",
+    "static/media/logo.9cb0a4d5.png": "/portfolio-arun/static/media/logo.9cb0a4d5.png",
+    "static/media/menda.cc143e54.png": "/portfolio-arun/static/media/menda.cc143e54.png",
+    "static/media/octo.df90e345.svg": "/portfolio-arun/static/media/octo.df90e345.svg",
+    "static/media/open-in-new-tab.deb54179.svg": "/portfolio-arun/static/media/open-in-new-tab.deb54179.svg",
+    "static/media/skills black.5084e299.png": "/portfolio-arun/static/media/skills black.5084e299.png",
+    "static/media/times.a84930ff.svg": "/portfolio-arun/static/media/times.a84930ff.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d1fbf2da.js",
+    "static/js/2.3b7d200e.chunk.js",
+    "static/css/main.017ac88f.chunk.css",
+    "static/js/main.e4885510.chunk.js"
+  ]
+}
