@@ -13,7 +13,7 @@ function Landing() {
 
   const downloadResume = () => {
     window.open(
-      "https://github.com/arun0808rana/resumee/raw/main/resume%20arun.pdf",
+      "https://github.com/arun0808rana/resumee/raw/main/wp_resume_arun_compressed.pdf",
       "_blank"
     );
   };
