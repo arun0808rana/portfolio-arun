@@ -201,6 +201,22 @@ const projectsData = [
     repo: "https://github.com/arun0808rana/chat-dashboard",
   },
   {
+    title: "Bookmark Service",
+    description:
+      "Online Bookmarking service",
+    stack: ["nodejs", "puppeteer", "violentmonkey-js"],
+    url: "http://149.28.209.117:9919/",
+    repo: "https://github.com/arun0808rana/bookmark_service",
+  },
+  {
+    title: "Unspotify Online",
+    description:
+      "Unspotify Adfree Listening",
+    stack: ["nodejs", "puppeteer"],
+    url: "http://149.28.209.117:7898/",
+    repo: "https://github.com/arun0808rana/unspotify-online",
+  },
+  {
     title: "Code Memoirs",
     description:
       "A one spot for all your coding snippets with a easy to add feature to add your favourite or ergonomic snippets.",
